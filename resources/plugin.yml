@@ -1,0 +1,20 @@
+name: AutoShutdown
+main: pl.extollite.AutoShutdown.AutoShutdown
+version: "1.0.1"
+api: ["1.0.8"]
+load: STARTUP
+authors: ["matjamzero", "Extollite"]
+description: Server auto shutdown schedule plugin. Fork of https://dev.bukkit.org/projects/auto-shutdown/.
+prefix: "AutoShutdown"
+
+commands:
+  as:
+    description: AutoShutdown plugin main command
+    aliases: ["autoshutdown"]
+    usage: /as
+    permission: autoshutdown.command
+
+permissions:
+  autoshutdown.command:
+    description: "Main command permission"
+    default: op
